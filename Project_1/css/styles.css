@@ -1,0 +1,233 @@
+
+body {
+    margin: 0 20px;
+}
+
+main {
+    min-height: calc(100vh - 89.3px - 51px);
+}
+
+.logo {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+.logo img {
+    width: 100px;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+h1 {
+    text-align: center;
+}
+figure {
+    margin: 0;
+}
+.box {
+    color: white;
+    background-color: pink;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    border: 1px solid black;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+}
+
+.sub-img {
+    width: 25%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.sub-para {
+    width: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sub-img img {
+    width: 99%;
+    border: 2px solid blue;
+}
+
+.sub-img a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box h2 {
+    width: 100%;
+}
+
+table {
+    border: 3px solid black;
+}
+
+thead, tfoot {
+    background-color: lightgreen;
+}
+
+.ticket {
+    background-color: lightpink
+}
+
+.contactDiv {
+    overflow: hidden;
+    width: 100%;
+}
+
+.contactDiv h2 {
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.contactDiv figure {
+    margin-left: 50px;
+}
+
+.contact img {
+    width: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.contact {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.contact figcaption {
+    color: black;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer a {
+    padding: 3px 50px;
+    border-right: 1px solid black;
+}
+
+.con{
+    border-style: none;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 50px 0;
+}
+
+.div-img {
+    width: 30%;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.div-para {
+    width: 30%;
+    border: 2px solid blue;
+    background-color: beige;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.div-para p {
+    margin: 30px;
+    font-size: 1.5em;
+}
+
+.div-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.messageDiv {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoDiv {
+    
+    margin: 50px;
+}
+
+.infoDiv a {
+    text-decoration: none;
+}
+
+.sent {
+    float: right;
+}
+
+.infoDiv a img {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .sub-img, .sub-para {
+        width: 50%;
+        padding: 0;
+    }
+
+    .div-para p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sub-img, .sub-para{
+            width: 90%;
+            padding: 0;
+    }
+    footer a {
+        display: block;
+        border-style: none;
+    }
+}
+
+
+
+
+
