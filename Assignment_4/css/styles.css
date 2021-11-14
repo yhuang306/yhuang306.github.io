@@ -54,11 +54,11 @@ a {
 }
 
 .mymango {
-    background-color: rgba(37, 231, 37, 0.5);
+    background-color: rgba(0, 0, 225, 0.5);
 }
 
 .mypeach {
-    background-color: rgba(76, 136, 228, 0.5);
+    background-color: rgba(0, 225, 0, 0.5);
 }
 
 .msgblock {
@@ -71,11 +71,11 @@ a {
 }
 
 .first {
-    background-color: lightblue;
+    background-color: lightgreen;
 }
 
 .second {
-    background-color: lightgreen;
+    background-color: lightblue;
 }
 
 .msgblock img {
