@@ -6,10 +6,6 @@ body {
     background-color: lightyellow;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .headerBox {
     width: 100%;
     height: 200px;
