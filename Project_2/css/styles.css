@@ -114,7 +114,7 @@ html {
 .picBox {
     width: 100%;
     height: 700px;
-    /* position: relative; */
+    position: relative;
     overflow: hidden;
 }
 
@@ -128,7 +128,7 @@ html {
     width: 40%;
     height: 20%;
     position:absolute;
-    top: 60%;
+    top: 20%;
     left: 15%;
     background-color: gray;
     padding: 20px;
