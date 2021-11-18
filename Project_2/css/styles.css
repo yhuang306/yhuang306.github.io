@@ -1,0 +1,540 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: lightyellow;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.headerBox {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox {
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    float: left;
+    animation: logomove 3s;
+    animation-iteration-count: infinite;
+    margin-top: -3%;
+    margin-left: 10%;
+}
+
+.imgBox img {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 0;
+} 
+
+.title {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    left: 42%;
+    animation: titlemove 3s alternate infinite;
+}
+
+.subtitle {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    animation: subtitlemove 3s alternate infinite;
+}
+
+.goup img {
+    width: 50px;
+    position: fixed;
+    background-color: white;
+    margin-left: 0%;
+}
+.nav {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: black;
+}
+
+.nav a {
+    margin: 0 10%;
+    font-size: xx-large;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.showBox {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+.slideShow {
+    width: 300%;
+    height: 100%;
+    border: 1px solid yellow;
+    animation: slideShow 15s 1s alternate infinite;
+}
+
+.slide {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.s1 {
+    background-color: rgb(230, 230, 101);
+}
+
+.s2 {
+    background-color: rgb(206, 206, 54);
+}
+
+.s3 {
+    background-color: rgb(143, 143, 6);
+}
+
+.picBox {
+    width: 100%;
+    height: 700px;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.bgPic, .bgPic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.p1 {
+    width: 40%;
+    height: 20%;
+    position:absolute;
+    top: 60%;
+    left: 15%;
+    background-color: gray;
+    padding: 20px;
+}
+
+.linearBox {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+.left, .right {
+    margin: 0% 2%;
+    width: 45%;
+    height: 100%;
+    float: left;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.right {
+    background: linear-gradient(to right, transparent, rgb(75, 90, 175));
+}
+
+.right h3 {
+    padding-top: 50px;
+}
+
+.right h3, .right p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.left {
+    background: linear-gradient(to right, transparent, rgb(75, 90, 175)),
+      url("../images/intro_img1.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+}
+
+.left p {
+    top: 0%;
+    border: 1px solid yellowgreen;
+    width: 50%;
+    color: white;
+    padding: 50px;
+    margin-left: 10%;
+}
+
+.row {
+    height: 500px;
+}
+
+.item {
+    width: 28%;
+    height: 100%;
+    float: left;
+    margin-left: 4%;
+    text-align: center;
+}
+
+.item img {
+    width: 90%;
+    height: 50%;
+}
+
+.p2 {
+    font-weight: bold;
+    color: rgb(144, 189, 53); 
+    font-size: 14px;
+}
+
+.p4 {
+    font-size: small;
+}
+
+.item a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.item a:hover {
+    background-color: gray;
+}
+
+footer {
+    border: 1px solid black;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.footerBox {
+    width: 90%;
+    height: 33%;
+    margin-left: 5%;
+}
+
+footer hr {
+    width: 80%;
+}
+
+.footer {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.socialLink {
+    width: 90%;
+    overflow: hidden;
+}
+
+.socialLink h4 {
+    width: 100%;
+    height: 15%;
+    text-align: end;
+}
+
+.social-img {
+    width: 100%;
+    padding-left: 70%;
+}
+
+.social-img a{
+    float: left;
+    width: 5%;
+}
+
+.social-img img {
+    width: 100%;
+}
+
+.rightsBox {
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.mymodal1, .mymodal2, .mymodal3, .mymodal4, .mymodal5, .mymodal6 {
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: rgba(253, 23, 3, 0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mymodal1:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mymodal2:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mymodal3:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mymodal4:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mymodal5:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.mymodal6:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.msgblock {
+    border: 1px solid black;
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    overflow: hidden;
+}
+
+.msgtop {
+    width: 100%;
+    height: 10%;
+}
+.msgtop p{
+    float: left;
+    margin-left: 10%;
+}
+
+.msgblock hr {
+    width: 80%;
+}
+
+.msgtop a {
+    float: right;
+    padding: 2%;
+    background-color: gray;
+    text-decoration: none;
+}
+
+.msgmiddle {
+    width: 100%;
+    height: 50%;
+}
+
+.middleimg, .middlepara {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.middlepara {
+    margin-top: 5%;
+}
+
+.middleimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.msgbottom {
+    width: 100%;
+    height: 25%;
+    background-color: lightgray;
+    padding: 3%;
+}
+
+.msgbottom p, .msgbottom hr {
+    width: 80%;
+}
+
+.msgbottom hr {
+    margin-top: 0%;
+}
+
+.msgbottom p {
+    padding-left: 10%;
+    margin-bottom: 0%;
+}
+
+.msgbottom a {
+    margin-left: 10%;
+    border: 1px solid white;
+    background-color: white;
+    padding: 5px;
+}
+
+@keyframes logomove {
+    0% {transform: scale(0);}
+    100% {transform: scale(0.4);}
+}
+
+@keyframes titlemove {
+    0% {top: 0%;}
+    50% {top: 20%;}
+    100% {top: 50%;}
+}
+
+@keyframes subtitlemove {
+    0% {top: 50%;}
+    50% {top: 20%;}
+    100% {top: 0%;}
+} 
+    
+
+@keyframes slideShow {
+    0% {margin-left: 0%;}
+    50% {margin-left: -100%;}
+    100% {margin-left: -200%;}
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        width: 50%;
+    }
+    .msgblock {
+        height: 100%;
+        margin-left: 25%;
+        overflow: scroll;
+    }
+
+    .goup img {
+        margin-left: 0%;
+    }
+
+    .nav {
+        height: 80px;
+    }
+
+    .msgtop {
+        height: 0%;
+    }
+
+    .msgbottom {
+        height: 30%;
+    }
+
+    .msgbottom p {
+        font-size: 14px;
+    }
+
+    .imgBox {
+        margin-top: -50px;
+        margin-left: 30%;
+    }
+
+    .title {
+        top: 45%;
+        left: 25%;
+        font-size: 10px;
+    }
+
+    .subtitle {
+        top: 70%;
+        left: 25%;
+        font-size: 10px;
+    }
+
+    .left p {
+        width: 40%;
+        padding: 20px;
+    }
+
+    #individual, #gift {
+        overflow: scroll;
+    }
+
+    @keyframes logomove {
+        0% {transform: scale(0);}
+        100% {transform: scale(0.2);}
+    }
+    
+    @keyframes titlemove {
+        0% {top: 45%;}
+        50% {top: 55%;}
+        100% {top: 70%;}
+    }
+    
+    @keyframes subtitlemove {
+        0% {top: 70%;}
+        50% {top: 55%;}
+        100% {top: 45%;}
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+   body {
+       width: 75vw;
+   }
+
+   .item img {
+    width: 60%;
+    height: 50%;
+    }
+
+    .msgblock {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 600px) {
+    .title {
+        left: 40%;
+        font-size: 14px;
+    }
+
+    .subtitle {
+        left: 40%;
+        font-size: 13px;
+    }
+
+    .imgBox {
+        margin-left: 0%
+    }
+
+    .goup img {
+        margin-left: 0%;
+        top: 0;
+        z-index: 100%;
+    }
+
+    .nav a {
+        font-size:x-large;
+    }
+}
+
+
+
+
