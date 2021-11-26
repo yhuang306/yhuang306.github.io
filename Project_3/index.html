@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3: Guess The Number</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>GUESS MY NUMBER</h1>
+        <h2>Guess the number between 1 and 100</h2>
+
+    </div>
+
+    <div class="main">
+        <div class="mainHeading">
+            <div class="scores">
+                <b>Score: <b id="currentScore">10</b></b>
+                <br>
+                <b>High Score: <b id="highScore">0</b></b>
+            </div>
+            <div class="resetbtn"> 
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="mainBody">
+            <div class="swaping">
+                <div id="start">
+                    <button onclick="start()">Start to Play!</button>
+                </div>
+                <div class="guessNum">
+                    <img src="images/guessing.gif" alt="guessing">
+                    <br><br><br>
+                    <input id="myNum" type="text" placeholder="Guess a number">
+                    <br><br>
+                    <button onclick="check()">Check</button>
+                    <br><br>
+                    <b><p id="hintMsg">Please enter a number from 1-100</p></b>
+                    <br><br>
+                </div>
+                <div class="win">
+                    <img src="images/winner.gif" alt="winner">
+                    <h2>Congratulation</h2>
+                    <p>Your guess was correct. <b id="secretNumOnWinPg"></b> is my secret number.</p>
+                    <h3>Your Score: <b id="yourScore"></b></h3>
+                    <b>Best: <b id="bestScore"></b></b>
+                    <br><br>
+                    <button onclick="reset()">Play Again</button>
+                    <br><br><br>
+                </div>
+                <div class="lose">
+                    <img src="images/gameover.gif" alt="gameover">
+                    <h2>Unfortunately You Lost the Game</h2>
+                    <p>Don't give up and Try Again. You can win next time.</p>
+                    <h3>My number was: <b id="secretNumOnLosePg"></b></h3>
+                    <button onclick="reset()">Try Again</button>
+                    <br><br><br>
+                </div>
+            </div>
+            </div>
+            <div class="guessHistory">
+            <h3>Guess History</h3>
+            <ul id="history">
+        
+            </ul>
+    </div>
+        </div>
+        
+    <script src="js/scripts.js"></script>
+</body>
+</html> 

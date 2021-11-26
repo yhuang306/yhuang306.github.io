@@ -1,0 +1,205 @@
+body {
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-family: helvetica;
+    width: 100%;
+    text-shadow:5px 5px 10px #5913db;
+}
+
+.heading h1 {
+    margin-bottom: 0px;
+}
+
+.heading h2 {
+    margin-top: 0px;
+}
+
+.main {
+    margin: 0px 100px 0px 100px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 8px;
+    height: 100%;
+}
+#myNum { 
+    background-color:lightgoldenrodyellow;
+    border-radius: 8px;
+    padding: 5px 0;
+    width: 50%;
+    font-size: 20px;
+}
+
+.mainHeading{
+    width: 80%;
+    height: 10%;
+    overflow: hidden;
+    padding: 5px 0;
+    margin: 5% 10% 0;
+}
+
+.scores {
+    width: 25%;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: lightpink;
+    border-radius: 8px;
+    color:white;
+    margin-top: 1%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.resetbtn button {
+    float: right;
+}
+.resetbtn button, .win button, .lose button, .guessNum button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px; 
+    padding: 10px;
+    text-align: center;
+    background-color: lightpink;
+    border-radius: 8px;
+    color: white;
+    border: none;
+}
+
+.mainBody {
+    text-align: center;
+    margin: 0 auto;   
+    background-color:lightgoldenrodyellow;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 50%;
+    margin-bottom: 3%;
+}
+
+.win button, .lose button, .guessNum button {
+    background-color: lightgreen;
+    float: none;
+}
+
+.guessNum, .win, .lose, #start {
+    background-color: rosybrown;
+    width: 80%;
+    height: 100%;
+    margin:auto;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-family: helvetica;
+    overflow: hidden;
+}
+
+.guessNum {
+    background-color: rosybrown;
+    padding-bottom: 5px;
+}
+
+.win{
+    background-color: rgb(233, 156, 207);
+}
+
+.lose{
+    background-color: rgb(241, 179, 155);
+}
+
+#start {
+    background-color: rgb(236, 184, 238);
+    text-align: center;
+}
+
+.guessNum img, .lose img, .win img {
+    width: 20%;
+} 
+
+
+.guessHistory {
+    width: 50%;
+    margin:auto;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    background: lightblue; 
+    border-radius: 8px;
+    overflow: hidden;
+    height: auto;
+}
+
+.swaping {
+    width: 400%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.guessNum, .win, .lose, #start {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+#start button {
+    padding: 40px;
+    /* margin-top: 35%; */
+    background-color: rgb(35, 206, 106);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 8px;
+    margin-top: 150px;
+    
+}
+
+
+
+@media screen and (max-width:800px) {
+    .main {
+        margin: 0;
+        width: 90%;
+    }
+
+    .mainHeading {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .scores {
+        width: 50%;
+    }
+
+    .mainBody {
+        width: 90%;
+    }
+
+    .guessNum img, .win img {
+        width: 30%;
+    } 
+}
+
+@media screen and (min-width:1200px) {
+    .main {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .guessNum img, .win img {
+        width: 20%;
+    } 
+
+    .lose img {
+        width: 20%;
+    }
+
+    .mainBody {
+        height: 55%;
+    }
+}
