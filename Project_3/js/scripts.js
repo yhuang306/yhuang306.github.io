@@ -41,13 +41,20 @@ function appendList (value, msg) {
 }
 
 function isDuplicate (userValue, array) {
-    console.log(`array length: ${array.length}`);
     if(array.length === 0) {
-        array.push(userValue);
-        return false;
+        if (!userValue || userValue > 100 || !Number(userValue)) {
+            return false;
+        }
+        else {
+            array.push(userValue);
+            return false;
+        }
     }
     else if (array.length === 1) {
-        if (userValue === array[0]) return true;
+        if (!userValue || userValue > 100 || !Number(userValue)){
+            return false;
+        }
+        else if (userValue === array[0]) return true;
         else {
             array.push(userValue);
             return false;
@@ -59,8 +66,8 @@ function isDuplicate (userValue, array) {
                 return true;
             } 
         }
-        array.push(userValue);
-                return false;
+            array.push(userValue);
+            return false;         
     }
 }
 
@@ -72,22 +79,27 @@ function check () {
         myNum.value = "";
     }
     else {
-        if (chance > 0) {
+        if (chance >= 1) {
             if (!userValue) {
                 // alert('no input!')
                 hintMsg.textContent = "Please enter a number between 1 and 100!";
-                console.log(chance);
+                console.log(`chance left: ${chance}`);
                 myNum.value = "";
             }
             else if (!Number(userValue)) {
                 // alert('no input!')
                 hintMsg.textContent = "Please enter NUMBER ONLY!";
-                console.log(chance);
+                console.log(`chance left: ${chance}`);
+                myNum.value = "";
+            }
+            else if (Number(userValue > 100)) {
+                hintMsg.textContent = "Please enter numbers 1-100 ONLY!";
+                console.log(`chance left: ${chance}`);
                 myNum.value = "";
             }
             else if (Number(userValue) === realSecretNum) {
                 // msgGame.textContent = 'You win!'
-                if(chance+1 > best){
+                if(chance > best){
                     best = chance;
                 }
                 swaping.style.marginLeft = "-200%";
@@ -100,32 +112,43 @@ function check () {
             else if (Number(userValue) > realSecretNum) {
                 let text = "Your guess is too high!";
                 hintMsg.textContent = "Your guess is too high!";
-                chance--;
-                currentScore.textContent = chance;
-                console.log(chance);
-                myNum.value = "";
-                appendList(userValue, text);
+                if (chance === 1){
+                    swaping.style.marginLeft = "-300%";
+                    chance--;
+                    currentScore.textContent = chance;
+                    console.log(`chance left: ${chance}`);
+                    appendList(userValue, text);
+                    secretNumOnLosePg.textContent = realSecretNum;
+                }
+                else{
+                    chance--;
+                    currentScore.textContent = chance;
+                    console.log(`chance left: ${chance}`);
+                    myNum.value = "";
+                    appendList(userValue, text);
+                }
             }
             else if (Number(userValue) < realSecretNum) {
                 let text = "Your guess is too low!";
                 hintMsg.textContent = "Your guess is too low!";
-                chance--;
-                currentScore.textContent = chance;
-                console.log(`chance: ${chance}`);
-                myNum.value = "";
-                appendList(userValue, text);
+                if (chance === 1){
+                    swaping.style.marginLeft = "-300%";
+                    chance--;
+                    currentScore.textContent = chance;
+                    console.log(`chance left: ${chance}`);
+                    appendList(userValue, text);
+                    secretNumOnLosePg.textContent = realSecretNum;
+                }
+                else{
+                    chance--;
+                    currentScore.textContent = chance;
+                    console.log(`chance left: ${chance}`);
+                    myNum.value = "";
+                    appendList(userValue, text);
+                }
             }
         }
-        else {
-            swaping.style.marginLeft = "-300%";
-            chance--;
-            currentScore.textContent = chance;
-            console.log(chance);
-            appendList(userValue, text);
-            secretNumOnLosePg.textContent = realSecretNum;
-        }  
-    }
-    
+    } 
 }
 
 function start () {
