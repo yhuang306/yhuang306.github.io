@@ -92,7 +92,7 @@ function check () {
                 console.log(`chance left: ${chance}`);
                 myNum.value = "";
             }
-            else if (Number(userValue > 100)) {
+            else if (Number(userValue > 100) || Number(userValue < 1)) {
                 hintMsg.textContent = "Please enter numbers 1-100 ONLY!";
                 console.log(`chance left: ${chance}`);
                 myNum.value = "";
