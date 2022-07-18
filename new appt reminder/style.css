@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: palegoldenrod;
+    margin: 0;
+    
+}
+nav {
+    background-color: black;
+    height: 40px;
+    display: block;
+    
+}
+.main {
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu {
+    display: flex;
+    text-align: center;
+    
+    
+}
+
+.menu li {
+    width: 20%;
+}
+
+form {
+    text-align: center;
+}
+
+#submit {
+    margin: 10px;
+}
