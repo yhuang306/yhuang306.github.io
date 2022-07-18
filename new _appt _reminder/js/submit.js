@@ -4,17 +4,17 @@ function submit() {
 
     if (remind_type === 'appt_remind'){
         if (appt_type === 'lab')
-            window.location.href = 'yhuang306.github.io/new _appt _reminder/templates/lab.html';
+            window.location.href = '../templates/lab.html';
         else if (appt_type === 'f/u')
-            window.location.href = 'yhuang306.github.io/new _appt _reminder/templates/followup.html';
+            window.location.href = '../templates/followup.html';
         else if (appt_type === 'shingrix')
-            window.location.href = 'yhuang306.github.io/new _appt _reminder/templates/shingrix.html';
+            window.location.href = '../templates/shingrix.html';
         else
-            window.location.href = 'yhuang306.github.io/new _appt _reminder/templates/labAndShingrix.html';
+            window.location.href = '../templates/labAndShingrix.html';
     }
 
     else if (remind_type === 'report'){
-        window.location.href = 'yhuang306.github.io/new _appt _reminder/templates/report.html';
+        window.location.href = '../templates/report.html';
     }
     else{
         window.location.href = "result.html";
