@@ -4,20 +4,17 @@ function submit() {
 
     if (remind_type === 'appt_remind'){
         if (appt_type === 'lab')
-            location.href = '../templates/lab.html';
+            location.href = '.../templates/lab.html';
         else if (appt_type === 'f/u')
-            location.href = '../templates/followup.html';
+            location.href = '.../templates/followup.html';
         else if (appt_type === 'shingrix')
-            location.href = '../templates/shingrix.html';
+            location.href = '.../templates/shingrix.html';
         else
-            location.href = '../templates/labAndShingrix.html';
+            location.href = '.../templates/labAndShingrix.html';
     }
 
     else if (remind_type === 'report'){
-        location.href = '../templates/report.html';
-    }
-    else{
-        location.href = "result.html";
+        location.href = '.../templates/report.html';
     }
     
 } 
