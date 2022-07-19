@@ -10,7 +10,7 @@ function submit() {
         else if (appt_type === 'shingrix')
             location.href = 'templates/shingrix.html';
         else if (appt_type === 'report')
-            location.href = 'templates/report_reminder.html';
+            location.href = 'templates/report_appt.html';
         else
             location.href = 'templates/labAndShingrix.html';
     }
