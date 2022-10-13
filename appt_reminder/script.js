@@ -24,7 +24,7 @@ function apptGenerate() {
         output.innerHTML = `${username.value} 您好! 丁华医生诊所提醒您跟我们预约了${replaceDay()}. ${need_Lab()} ${new_patient()} 如果迟到超过15分钟将视为没有预约, 变成排队等. 如果早到有可能会等到您的预约时间. 所以建议准时到就好. 请回复 1 确认预约. 请回复 2 取消预约. 然后有任何问题可以给我们回电话 718-886-8998. 谢谢！`
     }
     else {
-        output.innerHTML = `Hello ${username.value}! This is Dr. Ding's office to remind you that your appointment is on ${replaceDay()}. ${need_Lab()} ${new_patient()}. If you are more than 15 minutes late, you will be considered as no appointment and have to wait in line. If you come early, you may have to wait until your appointment time depending on how busy we are. Therefore, we strongly recommend you arrive on time. Please reply 1 to confirm the appointment, reply 2 to cancel the appointment and call us at 718-886-8998 to reschedule. Thank you!`
+        output.innerHTML = `Hello ${username.value}! This is Dr. Ding's office to remind you that your appointment is on ${replaceDay()}. ${need_Lab()} ${new_patient()} If you are more than 15 minutes late, you will be considered as no appointment and have to wait in line. If you come early, you may have to wait until your appointment time depending on how busy we are. Therefore, we strongly recommend you arrive on time. Please reply 1 to confirm the appointment, reply 2 to cancel the appointment and call us at 718-886-8998 to reschedule. Thank you!`
     }
     
 }
