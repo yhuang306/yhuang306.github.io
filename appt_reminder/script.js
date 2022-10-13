@@ -106,6 +106,9 @@ function need_Lab() {
         if(needLab.value === 'yes') {
             return "Remember to fast for 4 hours, you can drink water."
         }
+        else {
+            return '';
+        }
     }
 }
 
